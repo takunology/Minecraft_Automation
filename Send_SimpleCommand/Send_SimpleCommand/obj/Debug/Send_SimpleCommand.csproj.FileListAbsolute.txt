@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\bin\Debug\Send_SimpleCommand.exe.config
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\bin\Debug\Send_SimpleCommand.exe
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\bin\Debug\Send_SimpleCommand.pdb
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\obj\Debug\Send_SimpleCommand.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\obj\Debug\Send_SimpleCommand.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\obj\Debug\Send_SimpleCommand.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\obj\Debug\Send_SimpleCommand.exe
+F:\GitHub\Minecraft_Automation\Send_SimpleCommand\Send_SimpleCommand\obj\Debug\Send_SimpleCommand.pdb
