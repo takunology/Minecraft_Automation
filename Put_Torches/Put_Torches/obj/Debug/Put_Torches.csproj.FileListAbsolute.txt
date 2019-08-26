@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\bin\Debug\Put_Torches.exe.config
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\bin\Debug\Put_Torches.exe
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\bin\Debug\Put_Torches.pdb
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\obj\Debug\Put_Torches.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\obj\Debug\Put_Torches.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\obj\Debug\Put_Torches.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\obj\Debug\Put_Torches.exe
+F:\GitHub\Minecraft_Automation\Put_Torches\Put_Torches\obj\Debug\Put_Torches.pdb

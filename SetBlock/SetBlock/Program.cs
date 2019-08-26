@@ -2,6 +2,7 @@
 using System;
 using System.Net;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
@@ -29,7 +30,7 @@ namespace ConsoleApp1
                 var connection = new RCON(serveraddress, port, serverpass);
                 var result = await connection.SendCommandAsync(TPCommand);
 
-                string GetNum = Regex.Replace(result, @"[^0-9,.]", ""); //座標数値のみ検索
+                string GetNum = Regex.Replace(result, @"[^0-9-,.]", ""); //座標数値のみ検索
                 string[] StrArray = GetNum.Split(','); //カンマで区切られた文字を部分的に取り出して、配列に保持
 
                 Console.WriteLine(result);//生のデータ
@@ -47,7 +48,7 @@ namespace ConsoleApp1
                 double x = Position_x, y = Position_y, z = Position_z; //配置するために使用する座標
 
                 //ブロック名(grass:草ブロック, glass:ガラスブロック, air:空気(削除) etc...)
-                string Block_Name = "air";
+                string Block_Name = "grass";
                 //ブロックを置くコマンド(1個だけ配置)
                 //string SetBlock = "/setblock " + Position_x.ToString() + " " + Position_y.ToString() + " " + Position_z.ToString() + " " + Block_Name;
                 
@@ -63,15 +64,16 @@ namespace ConsoleApp1
                 }*/
 
                 //2次元方向(x, z方向)にブロックを配置する
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 50; i++)
                 {
                     x++;
-                    for (int j = 0; j < 10; j++)
+                    for (int j = 0; j < 50; j++)
                     {
                         z++;
                         string SetBlock = "/setblock " + x.ToString() + " " + y.ToString() + " " + z.ToString() + " " + Block_Name;
                         result = await connection.SendCommandAsync(SetBlock);
                         Console.WriteLine(result);
+                        Thread.Sleep(5); //5ミリ秒間隔で、鯖落ち防止
                     }
                     z = Position_z; //位置情報を修正(初期化)
                 }

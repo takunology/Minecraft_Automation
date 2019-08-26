@@ -31,7 +31,7 @@ namespace ConsoleApp1
                 var result = await connection.SendCommandAsync(TPCommand);
 
                 //相対座標取得
-                string GetNum = Regex.Replace(result, @"[^0-9,.]", ""); //座標数値のみ検索
+                string GetNum = Regex.Replace(result, @"[^0-9-,.]", ""); //座標数値のみ検索
                 string[] StrArray = GetNum.Split(','); //カンマで区切られた文字を部分的に取り出して、配列に保持
 
                 Console.WriteLine(result);//生のデータ
