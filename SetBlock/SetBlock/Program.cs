@@ -20,7 +20,7 @@ namespace ConsoleApp1
             var serverpass = "minecraft"; //RCONでログインするためのパスワード
             ushort port = 25575; //サーバのポート番号
 
-            string Player_Name = "PlayerName";
+            string Player_Name = "Player_Name";
             string TPCommand = "/tp " + Player_Name + " ~ ~ ~"; //プレイヤーの位置情報を得るためのコマンド
 
             //CoreRCONを使ってMinecraftへ接続
@@ -46,13 +46,13 @@ namespace ConsoleApp1
 
                 double x = Position_x, y = Position_y, z = Position_z; //配置するために使用する座標
 
-                //ブロック名(grass:草ブロック, glass:ガラスブロック etc...)
-                string Block_Name = "stone";
+                //ブロック名(grass:草ブロック, glass:ガラスブロック, air:空気(削除) etc...)
+                string Block_Name = "air";
                 //ブロックを置くコマンド(1個だけ配置)
                 //string SetBlock = "/setblock " + Position_x.ToString() + " " + Position_y.ToString() + " " + Position_z.ToString() + " " + Block_Name;
                 
                 // 線形(x方向)にブロックを配置する
-                /*for(int i = 0; i < 5; i++)
+                /*for(int i = 0; i < 10; i++)
                 {
                     x++;
                     string SetBlock = "/setblock " + x.ToString() + " " + y.ToString() + " " + z.ToString() + " " + Block_Name;
@@ -63,10 +63,10 @@ namespace ConsoleApp1
                 }*/
 
                 //2次元方向(x, z方向)にブロックを配置する
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     x++;
-                    for (int j = 0; j < 5; j++)
+                    for (int j = 0; j < 10; j++)
                     {
                         z++;
                         string SetBlock = "/setblock " + x.ToString() + " " + y.ToString() + " " + z.ToString() + " " + Block_Name;

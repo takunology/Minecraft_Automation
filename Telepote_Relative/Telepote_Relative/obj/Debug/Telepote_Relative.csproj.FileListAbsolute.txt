@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\bin\Debug\Telepote_Relative.exe.config
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\bin\Debug\Telepote_Relative.exe
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\bin\Debug\Telepote_Relative.pdb
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\obj\Debug\Telepote_Relative.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\obj\Debug\Telepote_Relative.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\obj\Debug\Telepote_Relative.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\obj\Debug\Telepote_Relative.exe
+F:\GitHub\Minecraft_Automation\Telepote_Relative\Telepote_Relative\obj\Debug\Telepote_Relative.pdb
