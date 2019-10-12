@@ -2,6 +2,7 @@
 using System;
 using System.Net;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
@@ -64,6 +65,7 @@ namespace ConsoleApp1
                         Console.WriteLine("Set (0, {0})", x);
                         string SetToaches = "/setblock " + (Position_x + x) + " " + (Position_y) + " " + (Position_z) + " " + Item;
                         Console.WriteLine(SetToaches);
+                        Thread.Sleep(100); //5ミリ秒間隔で、鯖落ち防止
                         result = await connection.SendCommandAsync(SetToaches);
                         Console.WriteLine(result);
                     }
@@ -76,6 +78,7 @@ namespace ConsoleApp1
                         Console.WriteLine("Set (0, {0})", z);
                         string SetToaches = "/setblock " + (Position_x) + " " + (Position_y) + " " + (Position_z + z) + " " + Item;
                         Console.WriteLine(SetToaches);
+                        Thread.Sleep(100); //5ミリ秒間隔で、鯖落ち防止
                         result = await connection.SendCommandAsync(SetToaches);
                         Console.WriteLine(result);
                     }
@@ -92,6 +95,7 @@ namespace ConsoleApp1
                                 Console.Write("Set ({0}, {1})\n", x, z);
                                 string SetToaches = "/setblock " + (Position_x + x) + " " + (Position_y) + " " + (Position_z + z) + " " + Item;
                                 Console.WriteLine(SetToaches);
+                                Thread.Sleep(100); //5ミリ秒間隔で、鯖落ち防止
                                 result = await connection.SendCommandAsync(SetToaches);
                                 Console.WriteLine(result);
                             }

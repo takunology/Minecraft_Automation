@@ -48,7 +48,7 @@ namespace ConsoleApp1
                 double x = Position_x, y = Position_y, z = Position_z; //配置するために使用する座標
 
                 //ブロック名(grass:草ブロック, glass:ガラスブロック, air:空気(削除) etc...)
-                string Block_Name = "grass";
+                string Block_Name = "air";
                 //ブロックを置くコマンド(1個だけ配置)
                 //string SetBlock = "/setblock " + Position_x.ToString() + " " + Position_y.ToString() + " " + Position_z.ToString() + " " + Block_Name;
                 
@@ -64,16 +64,16 @@ namespace ConsoleApp1
                 }*/
 
                 //2次元方向(x, z方向)にブロックを配置する
-                for (int i = 0; i < 50; i++)
+                for (int i = 0; i < 30; i++)
                 {
                     x++;
-                    for (int j = 0; j < 50; j++)
+                    for (int j = 0; j < 30; j++)
                     {
                         z++;
                         string SetBlock = "/setblock " + x.ToString() + " " + y.ToString() + " " + z.ToString() + " " + Block_Name;
                         result = await connection.SendCommandAsync(SetBlock);
                         Console.WriteLine(result);
-                        Thread.Sleep(5); //5ミリ秒間隔で、鯖落ち防止
+                        Thread.Sleep(10); //10ミリ秒間隔で、鯖落ち防止
                     }
                     z = Position_z; //位置情報を修正(初期化)
                 }

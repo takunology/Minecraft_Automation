@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\bin\Debug\Improvement_Torch.exe.config
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\bin\Debug\Improvement_Torch.exe
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\bin\Debug\Improvement_Torch.pdb
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\obj\Debug\Improvement_Torch.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\obj\Debug\Improvement_Torch.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\obj\Debug\Improvement_Torch.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\obj\Debug\Improvement_Torch.exe
+F:\GitHub\Minecraft_Automation\Improvement_Torch\Improvement_Torch\obj\Debug\Improvement_Torch.pdb
