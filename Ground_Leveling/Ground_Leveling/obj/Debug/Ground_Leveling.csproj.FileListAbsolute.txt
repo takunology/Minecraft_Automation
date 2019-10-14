@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\bin\Debug\Ground_Leveling.exe.config
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\bin\Debug\Ground_Leveling.exe
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\bin\Debug\Ground_Leveling.pdb
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\obj\Debug\Ground_Leveling.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\obj\Debug\Ground_Leveling.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\obj\Debug\Ground_Leveling.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\obj\Debug\Ground_Leveling.exe
+F:\GitHub\Minecraft_Automation\Ground_Leveling\Ground_Leveling\obj\Debug\Ground_Leveling.pdb
