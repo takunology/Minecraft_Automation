@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\bin\Debug\Tallest_in_Range.exe.config
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\bin\Debug\Tallest_in_Range.exe
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\bin\Debug\Tallest_in_Range.pdb
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\obj\Debug\Tallest_in_Range.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\obj\Debug\Tallest_in_Range.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\obj\Debug\Tallest_in_Range.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\obj\Debug\Tallest_in_Range.exe
+F:\GitHub\Minecraft_Automation\Tallest_in_Range\Tallest_in_Range\obj\Debug\Tallest_in_Range.pdb

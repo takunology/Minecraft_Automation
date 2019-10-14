@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\bin\Debug\Horizontal_BlockCount.exe.config
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\bin\Debug\Horizontal_BlockCount.exe
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\bin\Debug\Horizontal_BlockCount.pdb
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\obj\Debug\Horizontal_BlockCount.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\obj\Debug\Horizontal_BlockCount.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\obj\Debug\Horizontal_BlockCount.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\obj\Debug\Horizontal_BlockCount.exe
+F:\GitHub\Minecraft_Automation\Horizontal_BlockCount\Horizontal_BlockCount\obj\Debug\Horizontal_BlockCount.pdb
