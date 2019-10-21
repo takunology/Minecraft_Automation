@@ -150,7 +150,7 @@
                 </LinearGradientBrush>
             </Grid.Background>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" Height="53.333" Margin="443.667,113.241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28.665" FontSize="48" Foreground="White" Text="4" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="53.333" Margin="443.667,113.241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28.665" FontSize="48" Foreground="White" Text="4" Grid.Row="1" x:Name="Authority">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect></TextBlock>
@@ -215,13 +215,13 @@
                 </LinearGradientBrush>
             </Grid.Background>
         </Grid>
-        <TextBox HorizontalAlignment="Left" Height="33.879" Margin="75.216,474.576,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="804.116" Background="#00000000" BorderBrush="#00ABADB3" Foreground="White" FontSize="18" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="33.879" Margin="75.216,474.576,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="804.116" Background="#00000000" BorderBrush="#00ABADB3" Foreground="White" FontSize="18" Grid.Row="1" x:Name="Command" KeyDown="Command_KeyDown"/>
         <TextBlock HorizontalAlignment="Left" Height="20.666" Margin="75.216,448.91,0,0" TextWrapping="Wrap" Text="Command Line" VerticalAlignment="Top" Width="205.334" FontSize="16" Foreground="White" Grid.Row="1">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="85.001,101.756,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" Grid.Row="1"><Run Text="xxxxxxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-d6f510532f8b"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="85.001,101.756,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" Grid.Row="1" x:Name="PlayerID"><Run Text="xxxxxxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-d6f510532f8b"/></TextBlock>
         <Grid HorizontalAlignment="Left" Height="157.334" Margin="427.332,312.242,0,0" VerticalAlignment="Top" Width="452" Grid.Row="1">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -238,7 +238,7 @@
                 </LinearGradientBrush>
             </Grid.Background>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" Height="146.334" Margin="435.332,318.242,0,0" TextWrapping="Wrap" Text="log message here" VerticalAlignment="Top" Width="437" FontSize="14" Foreground="White" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="146.334" Margin="435.332,318.242,0,0" TextWrapping="Wrap" Text="log message here" VerticalAlignment="Top" Width="437" FontSize="14" Foreground="White" Grid.Row="1" x:Name="ConsoleLog">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect>
@@ -248,11 +248,11 @@
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="53.333" Margin="443.667,193.121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28.665" FontSize="48" Foreground="White" Text="1" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="53.333" Margin="443.667,193.121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28.665" FontSize="48" Foreground="White" Text="1" Grid.Row="1" x:Name="Players">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="30.666" Margin="225.999,37.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106.334" FontSize="20" Foreground="White" Text="Disconnect" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="30.666" Margin="225.999,37.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106.334" FontSize="20" Foreground="White" Text="Disconnect" Grid.Row="1" x:Name="isConnect">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect></TextBlock>

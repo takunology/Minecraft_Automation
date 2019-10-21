@@ -13,3 +13,7 @@ F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforM
 F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.csproj.CoreCompileInputs.cache
 F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.exe
 F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.pdb
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\bin\Debug\CoreRCON.dll
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.csproj.CopyComplete
