@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFforMinecraft", "WPFforMinecraft\WPFforMinecraft.csproj", "{E962DE20-CD8F-4EEF-8A33-A4267ED90278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E962DE20-CD8F-4EEF-8A33-A4267ED90278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E962DE20-CD8F-4EEF-8A33-A4267ED90278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E962DE20-CD8F-4EEF-8A33-A4267ED90278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E962DE20-CD8F-4EEF-8A33-A4267ED90278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD0EA366-7B56-4BA1-B3EA-CCC5F921F0EF}
+	EndGlobalSection
+EndGlobal

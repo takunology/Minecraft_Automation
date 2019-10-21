@@ -1,0 +1,15 @@
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\bin\Debug\WPFforMinecraft.exe.config
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\bin\Debug\WPFforMinecraft.exe
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\bin\Debug\WPFforMinecraft.pdb
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\MainWindow.g.cs
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\App.g.cs
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft_MarkupCompile.cache
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft_MarkupCompile.lref
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\MainWindow.baml
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.g.resources
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.Properties.Resources.resources
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.csproj.GenerateResource.cache
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.exe
+F:\GitHub\Minecraft_Automation\WPFforMinecraft\WPFforMinecraft\obj\Debug\WPFforMinecraft.pdb

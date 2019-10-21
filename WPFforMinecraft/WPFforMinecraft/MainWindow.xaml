@@ -1,0 +1,291 @@
+﻿<Window x:Class="WPFforMinecraft.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFforMinecraft"
+        mc:Ignorable="d"
+        Title="MainWindow" AllowsTransparency="True" WindowStyle="None" Background="Transparent" Height="600" Width="1000">
+    <Window.Resources>
+        <Storyboard x:Key="Open"/>
+        <Storyboard x:Key="Start">
+            <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.297"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0.778"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0.979"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="0.728"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="0.431"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0.485"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0.866"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="0.285"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:25" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Open}"/>
+            <BeginStoryboard Storyboard="{StaticResource Start}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid x:Name="grid" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="950">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="563*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#BFE983F9" Offset="0"/>
+                <GradientStop Color="#C0B0B3FD" Offset="0.615"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Path Data="M2.25,3.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="2.25,3.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <Path Data="M10,40" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="10,3,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1" Grid.Row="1"/>
+        <Path Data="M3,8 L3,43.75 40.5,7.75" Fill="#A57185FB" HorizontalAlignment="Left" Height="100" Margin="5,5,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="100" StrokeEndLineCap="Round" StrokeStartLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" Grid.RowSpan="2"/>
+        <Path Data="M949.99943,-5.8226425E-07 L1000.3336,39.999953 1000.3333,116.3332 949.99945,152.66649" Height="154.667" Margin="949.958,-1,-50.021,0" Stretch="Fill" StrokeThickness="2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50.063" Grid.RowSpan="2">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#BDE983F9"/>
+                    <GradientStop Color="#C0E983F9" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        <Path Data="M-4.7512645,111.37027 L-4.6881342,591.32781 934.75132,591.74582 934.58433,104.67149 544.44555,104.17064 440.73196,1.4970817 101.86427,1.6914104 z" HorizontalAlignment="Left" Height="590.251" Margin="5.937,4.5,0,0" Stretch="Fill" VerticalAlignment="Top" Width="938.563" Stroke="#B2FFFFFF" StrokeThickness="2" Grid.RowSpan="2"/>
+        <Path Data="M-3.9089246,111.08628 L-3.2347222,590.8973 932.72676,590.72704 932.97958,107.77197 543.50516,107.89929 437.35656,0.64752218 101.26665,0.6471824 z" HorizontalAlignment="Left" Height="580" Margin="10.833,9.167,0,0" Stretch="Fill" VerticalAlignment="Top" Width="927.417" Stroke="#B2FFFFFF" StrokeThickness="2" Grid.RowSpan="2"/>
+        <Path Data="M-4.1662314,105.66294 L-3.2249789,594.61589 932.80807,595.23572 932.97958,107.77197 543.50516,107.89929 432.48967,-6.1710812 98.002821,-5.3741639 z" HorizontalAlignment="Left" Height="568" Margin="16.75,14.25,0,0" Stretch="Fill" VerticalAlignment="Top" Width="914.667" Stroke="#B2FFFFFF" StrokeThickness="2" Grid.RowSpan="2"/>
+        <Path Data="M-4.1662316,101.60642 L-3.6454747,594.95373 932.80807,595.23572 932.97958,107.77197 543.50516,107.89929 429.10351,-10.094862 96.33985,-8.9997511 z" HorizontalAlignment="Left" Height="554.758" Margin="23,21,0,0" Stretch="Fill" VerticalAlignment="Top" Width="901.792" Stroke="#B2FFFFFF" StrokeThickness="2" Grid.RowSpan="2"/>
+        <Path Data="M-3.6375302,96.308637 L-2.882705,595.50127 932.80807,595.23572 932.75801,109.32613 544.77383,111.02407 425.04842,-13.868047 93.094231,-12.358773 z" HorizontalAlignment="Left" Height="540.333" Margin="29.5,26.417,0,0" Stretch="Fill" VerticalAlignment="Top" Width="887.797" Stroke="#B2FFFFFF" StrokeThickness="2" Grid.RowSpan="2"/>
+        <Path Data="M4.0602325,89.237488 L4.4182818,587.39153 940.35935,587.39155 940.7179,104.68443 549.81692,105.45677 428.70685,-18.888584 97.868823,-19.275136 z" HorizontalAlignment="Left" Height="525.667" Margin="36.667,35.333,0,0" Stretch="Fill" VerticalAlignment="Top" Width="874" Stroke="#B2FFFFFF" StrokeThickness="2" Grid.RowSpan="2"/>
+        <Path Data="M89.261746,92.495867 L160.95269,93.479283 204.43723,113.99404 351.04234,113.66023 351.709,468.23813 90.668072,467.90588 z" HorizontalAlignment="Left" Height="380.836" Margin="76.885,45.539,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="271.448" Grid.Row="1"/>
+        <Grid HorizontalAlignment="Left" Height="43.334" Margin="499.999,133.121,0,0" VerticalAlignment="Top" Width="379.333" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="30.333" Margin="518.658,140.454,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="20" Foreground="White" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect><Run Text="Authority "/><Run Text="L"/><Run Text="evel"/></TextBlock>
+        <Grid HorizontalAlignment="Left" Height="43.334" Margin="499.999,213.454,0,0" VerticalAlignment="Top" Width="379.333" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="30.666" Margin="519.667,219.454,0,0" TextWrapping="Wrap" Text="Players" VerticalAlignment="Top" Width="205.334" FontSize="20" Foreground="White" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <Grid HorizontalAlignment="Left" Height="60.667" Margin="427.332,115.788,0,0" VerticalAlignment="Top" Width="60" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="60.667" Margin="427.332,196.121,0,0" VerticalAlignment="Top" Width="60" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="53.333" Margin="443.667,113.241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28.665" FontSize="48" Foreground="White" Text="4" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect></TextBlock>
+        <Grid HorizontalAlignment="Left" Height="20.333" Margin="575.464,15,0,0" VerticalAlignment="Top" Width="315.333">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Path Data="M-0.13101182,8.3336664 L-42.797667,9.000333 -120.79892,76.334135 -172.36658,118.60809 -228.13336,119.0011" HorizontalAlignment="Left" Height="112.667" Margin="-229.131,7.333,0,-99.667" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="230"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="598.167,15.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="14" Foreground="White" Text="Minecraft Automation Controler">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect></TextBlock>
+        <Grid HorizontalAlignment="Left" Height="20.333" Margin="575.464,3.333,0,0" VerticalAlignment="Top" Width="315.333" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="598.167,3.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="14" Foreground="White" Text="Version : alpha-1.0" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="33.667" Margin="85.001,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="247.332" Foreground="White" TextAlignment="Center" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect><Run Text="Player"/><Run Text=" ID :"/></TextBlock>
+        <Grid HorizontalAlignment="Left" Height="33.879" Margin="75.216,474.576,0,0" VerticalAlignment="Top" Width="804.116" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <TextBox HorizontalAlignment="Left" Height="33.879" Margin="75.216,474.576,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="804.116" Background="#00000000" BorderBrush="#00ABADB3" Foreground="White" FontSize="18" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="20.666" Margin="75.216,448.91,0,0" TextWrapping="Wrap" Text="Command Line" VerticalAlignment="Top" Width="205.334" FontSize="16" Foreground="White" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="85.001,101.756,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14" Grid.Row="1"><Run Text="xxxxxxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-"/><Run Text="xxxx"/><Run Text="-d6f510532f8b"/></TextBlock>
+        <Grid HorizontalAlignment="Left" Height="157.334" Margin="427.332,312.242,0,0" VerticalAlignment="Top" Width="452" Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#B3BA25FF" Offset="0"/>
+                    <GradientStop Color="#B29898F7" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="146.334" Margin="435.332,318.242,0,0" TextWrapping="Wrap" Text="log message here" VerticalAlignment="Top" Width="437" FontSize="14" Foreground="White" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="20.666" Margin="427.332,286.576,0,0" TextWrapping="Wrap" Text="Console Log" VerticalAlignment="Top" Width="205.334" FontSize="16" Foreground="White" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="53.333" Margin="443.667,193.121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28.665" FontSize="48" Foreground="White" Text="1" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="30.666" Margin="225.999,37.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106.334" FontSize="20" Foreground="White" Text="Disconnect" Grid.Row="1">
+            <TextBlock.Effect>
+                <BlurEffect Radius="0"/>
+            </TextBlock.Effect></TextBlock>
+        <Path Data="M950.0625,-0.5 L999.9375,39.625 999.9959,116.73415 949.39025,153.83876" HorizontalAlignment="Left" Height="154.333" Margin="949.417,-0.5,-49.996,0" Stretch="Fill" StrokeThickness="5" VerticalAlignment="Top" Width="50.579" Stroke="White" Grid.RowSpan="2">
+            <Path.Effect>
+                <BlurEffect Radius="4"/>
+            </Path.Effect>
+        </Path>
+        <Path Data="M949.125,598.75 L908.75,559.125" HorizontalAlignment="Left" Height="41.625" Margin="907.75,521.125,-0.125,0" Stretch="Fill" Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Width="42.375" Grid.Row="1">
+            <Path.Effect>
+                <BlurEffect Radius="3"/>
+            </Path.Effect>
+        </Path>
+        <Path Data="M-0.83355433,521.16673 L-0.97422019,599.51105 183.99962,600.50006" HorizontalAlignment="Left" Height="82.333" Margin="-1.974,483.167,0,-2.5" Stretch="Fill" Stroke="White" StrokeThickness="6" VerticalAlignment="Top" Width="187.974" Grid.Row="1">
+            <Path.Effect>
+                <BlurEffect Radius="4"/>
+            </Path.Effect>
+        </Path>
+        <Path Data="M999.66709,92.670024 L905.02318,92.318948 904.00034,92.336701 904.00034,214.99826 859.00031,214.99826 858.35215,159.24699 511.171,158.50042 502.15426,162.26876 502.43499,209.51619 493.66561,214.97268 396.16557,215.97264 397.17096,404.49102 380.17096,421.99036 348.50429,422.15702" HorizontalAlignment="Left" Height="331.851" Margin="346.833,60.316,-49.996,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="653.163" RenderTransformOrigin="0.496,0.556" Grid.Row="1"/>
+        <Path Data="M998.66667,88 L903.33302,85.333333 894.67315,93.663713 896.00642,299.96146 859.3334,299.63038 858.66719,239.97403 516.00137,241.30713 503.02664,248.98216 502.83454,292.46425 492.6681,302.63004 421.66793,303.29642 404.66798,316.62747 404.70206,413.60335 383.14426,436.10786 348.33468,436.60613" HorizontalAlignment="Left" Height="353.334" Margin="347.333,47.333,-49.667,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="652.334" Grid.Row="1"/>
+        <Path Data="M422.57654,158.6482 L430.99931,146.33348 464.33174,146.33382 470.66491,152.33342 487.99777,152.66649 487.66445,211.66962" HorizontalAlignment="Left" Height="67.334" Margin="421.577,108.333,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="67.423" Grid.Row="1"/>
+        <Path Data="M423,157.66667 L422.83342,211.58313 389.35067,211.66634 376.94052,219.33315 377.35697,391.9995 366.01525,404.9619 348.03882,405.08325" HorizontalAlignment="Left" Height="249.416" Margin="347,119.667,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="77" Grid.Row="1"/>
+        <Path Data="M487.33333,292.33333 L487.33401,233.00074 468.99992,233.33408 450.20799,227.25056 433.16585,227.35423 421.66553,237.5211 421.66553,284.10535 402.99861,299.33364 346.99714,299.33398" HorizontalAlignment="Left" Height="74.082" Margin="346.667,189.063,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="142.333" Grid.Row="1"/>
+        <Path Data="M0,46.666667 L0.33333333,-0.00033206177 62.062064,-0.00033206177" HorizontalAlignment="Left" Height="53" Margin="0,-1,0,0" Stretch="Fill" Stroke="#F6BFCFF9" StrokeThickness="7" VerticalAlignment="Top" Width="51.667" Grid.RowSpan="2">
+            <Path.Effect>
+                <BlurEffect Radius="3"/>
+            </Path.Effect>
+        </Path>
+        <Path Data="M578.5,14.5 L576,17.75 575.99999,31.50028 579.38339,34.915335" HorizontalAlignment="Left" Height="22.415" Margin="574.417,14.25,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="5.383"/>
+        <Path Data="M886.00045,13.673589 L891.33327,16.090265 891.58261,32.916663 886.66733,35.257014" HorizontalAlignment="Left" Height="23.583" Margin="885.333,13.167,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="7.583"/>
+        <Path Data="M886.00045,13.673589 L891.33327,16.090265 891.58261,32.916663 886.66733,35.257014" HorizontalAlignment="Left" Height="23.583" Margin="885.333,1.583,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="7.583" Grid.Row="1"/>
+        <Path Data="M578.5,14.5 L576,17.75 575.99999,31.50028 579.38339,34.915335" HorizontalAlignment="Left" Height="22.415" Margin="574.417,2.751,0,0" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="5.383" Grid.Row="1"/>
+        <Path Data="M574.66666,49.000083 L537.33284,49.333334 414.66559,152.97486 346.33193,153.30811" HorizontalAlignment="Left" Height="106.333" Margin="345.333,11,0,0" Grid.Row="1" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="230.334"/>
+
+    </Grid>
+</Window>
