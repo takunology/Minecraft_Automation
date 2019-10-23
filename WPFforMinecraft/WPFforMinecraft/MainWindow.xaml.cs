@@ -30,14 +30,14 @@ namespace WPFforMinecraft
 
         }
 
-        
-        public async Task Command_KeyDown(object sender, KeyEventArgs e)
+
+        async public void Command_KeyDown(object sender, KeyEventArgs e)
         {
             SendCommand sendCommand = new SendCommand();
             if (e.Key == Key.Enter)
             {
                 //Send(Command.Text);
-                await Send();
+                Send();
                 
             }
         }

@@ -171,10 +171,10 @@
             </Grid.Background>
             <Path Data="M-0.13101182,8.3336664 L-42.797667,9.000333 -120.79892,76.334135 -172.36658,118.60809 -228.13336,119.0011" HorizontalAlignment="Left" Height="112.667" Margin="-229.131,7.333,0,-99.667" Stretch="Fill" Stroke="#B2FFFFFF" StrokeThickness="2" VerticalAlignment="Top" Width="230"/>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="598.167,15.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="14" Foreground="White" Text="Minecraft Automation Controler">
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="598.167,15.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="14" Foreground="White">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
-            </TextBlock.Effect></TextBlock>
+            </TextBlock.Effect><Run Text="Minecraft Automation Con"/><Run Text="sole"/></TextBlock>
         <Grid HorizontalAlignment="Left" Height="20.333" Margin="575.464,3.333,0,0" VerticalAlignment="Top" Width="315.333" Grid.Row="1">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -191,7 +191,7 @@
                 </LinearGradientBrush>
             </Grid.Background>
         </Grid>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="598.167,3.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="14" Foreground="White" Text="Version : alpha-1.0" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="598.167,3.333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205.334" FontSize="14" Foreground="White" Text="Version : alpha" Grid.Row="1">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect></TextBlock>
@@ -216,7 +216,7 @@
             </Grid.Background>
         </Grid>
         <TextBox HorizontalAlignment="Left" Height="33.879" Margin="75.216,474.576,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="804.116" Background="#00000000" BorderBrush="#00ABADB3" Foreground="White" FontSize="18" Grid.Row="1" x:Name="Command" KeyDown="Command_KeyDown"/>
-        <TextBlock HorizontalAlignment="Left" Height="20.666" Margin="75.216,448.91,0,0" TextWrapping="Wrap" Text="Command Line" VerticalAlignment="Top" Width="205.334" FontSize="16" Foreground="White" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="75,449,0,0" TextWrapping="Wrap" Text="Command" VerticalAlignment="Top" Width="206" FontSize="16" Foreground="White" Grid.Row="1">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect>
@@ -243,7 +243,7 @@
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="20.666" Margin="427.332,286.576,0,0" TextWrapping="Wrap" Text="Console Log" VerticalAlignment="Top" Width="205.334" FontSize="16" Foreground="White" Grid.Row="1">
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="429,287,0,0" TextWrapping="Wrap" Text="Console Log" VerticalAlignment="Top" Width="206" FontSize="16" Foreground="White" Grid.Row="1">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect>
@@ -252,7 +252,7 @@
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="30.666" Margin="225.999,37.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106.334" FontSize="20" Foreground="White" Text="Disconnect" Grid.Row="1" x:Name="isConnect">
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="94,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontSize="20" Foreground="White" Text="Status" Grid.Row="1" x:Name="isConnect">
             <TextBlock.Effect>
                 <BlurEffect Radius="0"/>
             </TextBlock.Effect></TextBlock>
