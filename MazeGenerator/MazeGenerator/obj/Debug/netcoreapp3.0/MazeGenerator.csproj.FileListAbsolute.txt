@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\bin\Debug\netcoreapp3.0\MazeGenerator.exe
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\bin\Debug\netcoreapp3.0\MazeGenerator.deps.json
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\bin\Debug\netcoreapp3.0\MazeGenerator.runtimeconfig.json
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\bin\Debug\netcoreapp3.0\MazeGenerator.runtimeconfig.dev.json
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\bin\Debug\netcoreapp3.0\MazeGenerator.dll
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\bin\Debug\netcoreapp3.0\MazeGenerator.pdb
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\obj\Debug\netcoreapp3.0\MazeGenerator.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\obj\Debug\netcoreapp3.0\MazeGenerator.AssemblyInfoInputs.cache
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\obj\Debug\netcoreapp3.0\MazeGenerator.AssemblyInfo.cs
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\obj\Debug\netcoreapp3.0\MazeGenerator.dll
+F:\GitHub\Minecraft_Automation\MazeGenerator\MazeGenerator\obj\Debug\netcoreapp3.0\MazeGenerator.pdb
