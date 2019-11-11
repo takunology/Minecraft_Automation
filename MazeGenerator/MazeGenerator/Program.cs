@@ -70,8 +70,8 @@ namespace MazeGenerator
         static void Generate() //迷路生成
         {
             /// <summary>
-            /// ランダムな初期座標 PointX, PointY を指定。ただし、座標が奇数であれば壁、偶数なら道。
-            /// 進む方向は乱数で決めて、その方向の先が壁でない限り繰り返す。
+            /// ランダムな初期座標 PointX, PointY を指定。ただし、座標が奇数であれば道、偶数なら壁。
+            /// 進む方向は乱数で決めて、その方向の2つ(1つ)先が壁でない限り繰り返す。
             /// </summary>
             while (true)
             {
@@ -99,7 +99,7 @@ label:
                 //道を挟んだ四方が壁になるまで続ける
                 if ((Maze[PointX - 2, PointZ - 2] == "■") && (Maze[PointX + 2, PointZ - 2] == "■") && (Maze[PointX - 2, PointZ + 2] == "■") && (Maze[PointX + 2, PointZ + 2] == "■"))
                 {                    
-                     break;
+                     //break;
                 }
 
                 while (PointX != 0 || PointX != (Maze.GetLength(0) - 1) || PointZ != 1 || PointZ != (Maze.GetLength(1) - 1)) //外壁でないかぎり続ける
@@ -128,11 +128,12 @@ label:
                                             goto label;
                                         }
                                     }
-                                    else if (Maze[PointX + 2, PointZ] == "■")
-                                    {
-                                        //PointX = PointX + 2;
-                                        goto label;
-                                    }
+
+                                }
+                                else if (Maze[PointX + 2, PointZ] == "■")
+                                {
+                                    PointX = PointX + 2;
+                                    goto label;
                                 }
                                 break;
                             }
@@ -156,11 +157,12 @@ label:
                                             goto label;
                                         }
                                     }
-                                    else if (Maze[PointX - 2, PointZ] == "■")
-                                    {
-                                        //PointX = PointX - 2;
-                                        goto label;
-                                    }
+
+                                }
+                                else if (Maze[PointX - 2, PointZ] == "■")
+                                {
+                                    PointX = PointX - 2;
+                                    goto label;
                                 }
                                 break;
                             }
@@ -187,11 +189,12 @@ label:
                                             goto label;
                                         }
                                     }
-                                    else if (Maze[PointX, PointZ + 2] == "■")
-                                    {
-                                        //PointZ = PointZ + 2;
-                                        goto label;
-                                    }
+
+                                }
+                                else if (Maze[PointX, PointZ + 2] == "■")
+                                {
+                                    PointZ = PointZ + 2;
+                                    goto label;
                                 }
                                 break;
                             }
@@ -216,20 +219,21 @@ label:
                                             goto label;
                                         }
                                     }
-                                    else if (Maze[PointX, PointZ - 2] == "■")
-                                    {
-                                        //PointZ = PointZ - 2;
-                                        goto label;
-                                    }
+
+                                }
+                                else if (Maze[PointX, PointZ - 2] == "■")
+                                {
+                                    PointZ = PointZ - 2;
+                                    goto label;
                                 }
                                 break;
                             }
                     }
                     Console.WriteLine($"壁を作る座標：{PointX}, {PointZ}");
-                    //Console.Clear();
+                    Console.Clear();
                     ShowMaze();
                     //Console.ReadKey();
-                    System.Threading.Thread.Sleep(50);
+                    //System.Threading.Thread.Sleep(50);
                 }
                 Console.WriteLine("壁伸ばし終了");
             }
