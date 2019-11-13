@@ -4,20 +4,16 @@ namespace MazeGenerator
 {
     class Program
     {
-        public static string[,] Maze = new string[0, 0]; //ベースの迷路
+        static string[,] Maze = new string[0, 0];
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Maze Generator");
-#if DEBUG
-            while (true)
-            {
-                Input(); //迷路のサイズ
-                Wall(); // 迷路の外壁生成
-                Generate();
-                ShowMaze();
-            }
-#endif
+            Input(); //入力
+            WallGenerate(); //壁生成
+            Generate(); //迷路生成
+            Check(); //修正
+            //ShowMaze(); //最終完成図
+            Console.WriteLine("迷路完成！");
         }
 
         static void Input()
@@ -26,12 +22,14 @@ namespace MazeGenerator
             {
                 Console.Write("X：");
                 int X = int.Parse(Console.ReadLine());
+                //int X = 21;
                 Console.Write("Z：");
-                int Z = int.Parse(Console.ReadLine());
+                int Y = int.Parse(Console.ReadLine());
+                //int Y = 21;
 
-                if(X % 2 == 1 && Z % 2 == 1)
+                if (X % 2 == 1 && Y % 2 == 1)
                 {
-                    Maze = new string[X, Z];
+                    Maze = new string[X, Y];
                     Console.WriteLine();
                     break;
                 }
@@ -39,228 +37,238 @@ namespace MazeGenerator
             }
         }
 
-        static void Wall() //壁生成
+        static void WallGenerate()
         {
-            for(int i = 0; i < Maze.GetLength(0); i++)
+            for (int x = 0; x < Maze.GetLength(0); x++)
             {
-                if(i == 0 || i == (Maze.GetLength(0) - 1)) // X方向の始めと終り
+                if (x == 0 || x == (Maze.GetLength(0) - 1)) //最初または最後の行は壁にする
                 {
-                    for (int j = 0; j < Maze.GetLength(1); j++)
+                    for (int y = 0; y < Maze.GetLength(1); y++)
                     {
-                        Maze[i, j] = "■";
+                        Maze[x, y] = "■";
                     }
                 }
-                else 
+                else
                 {
-                    for (int j = 0; j < Maze.GetLength(1); j++)
+                    for (int y = 0; y < Maze.GetLength(1); y++)
                     {
-                        if (j == 0 || j == (Maze.GetLength(1) - 1)) // Z方向の始めと終り
+                        if (y == 0 || y == (Maze.GetLength(1) - 1)) //最初または最後の列は壁にする
                         {
-                            Maze[i, j] = "■";
+                            Maze[x, y] = "■";
                         }
-                        else
+                        else //最初と最後を除く列は空欄
                         {
-                            Maze[i, j] = "　";
-                        }                   
+                            Maze[x, y] = "　";
+                        }
                     }
                 }
             }
         }
 
-        static void Generate() //迷路生成
+        static void ShowMaze()
         {
-            /// <summary>
-            /// ランダムな初期座標 PointX, PointY を指定。ただし、座標が奇数であれば道、偶数なら壁。
-            /// 進む方向は乱数で決めて、その方向の2つ(1つ)先が壁でない限り繰り返す。
-            /// </summary>
-            while (true)
+            for (int x = 0; x < Maze.GetLength(0); x++)
             {
-                bool Initialize = false; //既に1回目の壁伸ばしをしているか
-label:          
-                Random rnd = new Random();
-                int PointX = 0; 
-                int PointZ = 0; 
-
-                while (true) //偶数になるまで再抽選
+                for (int y = 0; y < Maze.GetLength(1); y++)
                 {
-                    PointX = rnd.Next(2, Maze.GetLength(0) - 2);//壁伸ばし法の開始点X (外壁と通路は除く)
-                    PointZ = rnd.Next(2, Maze.GetLength(1) - 2);
-                    if (PointX % 2 == 0 && PointZ % 2 == 0)
-                    {
-                        if (Initialize == true && Maze[PointX, PointZ] == "■") { }                             
-                        else { break; }                       
-                    }
+                    Console.Write(Maze[x, y]);
                 }
-
-                Console.WriteLine($"開始点：{PointX}, {PointZ}");
-                Initialize = true;
-                Maze[PointX, PointZ] = "■"; //とりあえず開始点を壁にしとく
-
-                //道を挟んだ四方が壁になるまで続ける
-                if ((Maze[PointX - 2, PointZ - 2] == "■") && (Maze[PointX + 2, PointZ - 2] == "■") && (Maze[PointX - 2, PointZ + 2] == "■") && (Maze[PointX + 2, PointZ + 2] == "■"))
-                {                    
-                     //break;
-                }
-
-                while (PointX != 0 || PointX != (Maze.GetLength(0) - 1) || PointZ != 1 || PointZ != (Maze.GetLength(1) - 1)) //外壁でないかぎり続ける
-                {
-                    int direction = Direction(); //進む方向を決める
-                    Console.WriteLine($"進行方向：{direction}");
-                    switch (direction)
-                    {
-                        case 0: //下方向
-                            if (PointX == (Maze.GetLength(0) - 1)) { goto label; } //下の壁に衝突した場合
-                            else
-                            {
-
-                                if (Maze[PointX + 2, PointZ] == "　" /*|| Maze[PointX + 2, PointZ] == "　"*/) //隣接が通路かつその隣接も通路
-                                {
-                                    Maze[PointX + 1, PointZ] = "■"; //壁
-                                    Maze[PointX + 2, PointZ] = "■"; //壁生成
-                                    PointX = PointX + 2; //道の分1マス開ける
-                                    if (PointX == (Maze.GetLength(0) - 3)) //下側の壁に隣接した場合は伸ばす
-                                    {
-                                        Maze[PointX, PointZ + 1] = "■";
-                                        //if (Maze[PointX - 2, PointZ - 2] == "■" && Maze[PointX + 2, PointZ - 2] == "■" && Maze[PointX - 2, PointZ + 2] == "■" && Maze[PointX + 2, PointZ + 2] == "■")
-                                        if(Maze[PointX + 2, PointZ] == "■")
-                                        {
-                                            //PointX = PointX + 2;
-                                            goto label;
-                                        }
-                                    }
-
-                                }
-                                else if (Maze[PointX + 2, PointZ] == "■")
-                                {
-                                    PointX = PointX + 2;
-                                    goto label;
-                                }
-                                break;
-                            }
-
-                        case 1: //上方向
-                            if (PointX == 0) { goto label; } //上の壁に衝突した場合
-                            else
-                            {
-                                if (Maze[PointX - 2, PointZ] == "　" /*|| Maze[PointX - 2, PointZ] == "　"*/)
-                                {
-                                    Maze[PointX - 1, PointZ] = "■"; //壁
-                                    Maze[PointX - 2, PointZ] = "■"; //壁生成
-                                    PointX = PointX - 2; //道の分1マス開ける
-                                    if (PointX == 2) //上側の壁に隣接した場合は伸ばす
-                                    {
-                                        Maze[PointX, PointZ - 1] = "■";
-                                        //if (Maze[PointX - 2, PointZ - 2] == "■" && Maze[PointX + 2, PointZ - 2] == "■" && Maze[PointX - 2, PointZ + 2] == "■" && Maze[PointX + 2, PointZ + 2] == "■")
-                                            if (Maze[PointX - 2, PointZ] == "■")
-                                            {
-                                            //PointX = PointX - 2;
-                                            goto label;
-                                        }
-                                    }
-
-                                }
-                                else if (Maze[PointX - 2, PointZ] == "■")
-                                {
-                                    PointX = PointX - 2;
-                                    goto label;
-                                }
-                                break;
-                            }
-
-                        case 2: //右方向
-                            if (PointZ == (Maze.GetLength(1) - 1)) { goto label; } //右の壁に衝突した場合
-                            else
-                            {
-
-                                if (Maze[PointX, PointZ + 2] == "　" /*|| Maze[PointX, PointZ + 2] == "　"*/)
-                                {
-                                    Maze[PointX, PointZ + 1] = "■"; //壁
-                                    Maze[PointX, PointZ + 2] = "■"; //壁生成
-                                    PointZ = PointZ + 2; //道の分1マス開ける
-                                    
-                                    if(PointZ == (Maze.GetLength(1) - 3)) //右側の壁に隣接した場合は伸ばす
-                                    {
-                                        Maze[PointX, PointZ + 1] = "■";
-
-                                        //if (Maze[PointX - 2, PointZ - 2] == "■" && Maze[PointX + 2, PointZ - 2] == "■" && Maze[PointX - 2, PointZ + 2] == "■" && Maze[PointX + 2, PointZ + 2] == "■")
-                                        if (Maze[PointX, PointZ + 2] == "■")
-                                        {
-                                            //PointZ = PointZ + 2;
-                                            goto label;
-                                        }
-                                    }
-
-                                }
-                                else if (Maze[PointX, PointZ + 2] == "■")
-                                {
-                                    PointZ = PointZ + 2;
-                                    goto label;
-                                }
-                                break;
-                            }
-
-                        case 3: //左方向
-                            if (PointZ == 0) { goto label; } //左の壁に衝突した場合
-                            else
-                            {
-                                if (Maze[PointX, PointZ - 2] == "　" /*|| Maze[PointX, PointZ - 2] == "　"*/)
-                                {
-                                    Maze[PointX, PointZ - 1] = "■"; //壁
-                                    Maze[PointX, PointZ - 2] = "■"; //壁生成
-                                    PointZ = PointZ - 2; //道の分1マス開ける
-                                    if (PointZ == 2) //左側の壁に隣接した場合は伸ばす
-                                    {
-                                        Maze[PointX, PointZ - 1] = "■";
-
-                                        //if (Maze[PointX - 2, PointZ - 2] == "■" && Maze[PointX + 2, PointZ - 2] == "■" && Maze[PointX - 2, PointZ + 2] == "■" && Maze[PointX + 2, PointZ + 2] == "■")
-                                        if (Maze[PointX, PointZ - 2] == "■")
-                                        {
-                                            //PointZ = PointZ - 2;
-                                            goto label;
-                                        }
-                                    }
-
-                                }
-                                else if (Maze[PointX, PointZ - 2] == "■")
-                                {
-                                    PointZ = PointZ - 2;
-                                    goto label;
-                                }
-                                break;
-                            }
-                    }
-                    Console.WriteLine($"壁を作る座標：{PointX}, {PointZ}");
-                    Console.Clear();
-                    ShowMaze();
-                    //Console.ReadKey();
-                    //System.Threading.Thread.Sleep(50);
-                }
-                Console.WriteLine("壁伸ばし終了");
+                Console.WriteLine();
             }
-            Console.WriteLine("\n終了");
         }
 
-        static int Direction() // 進路決め
+        static int Direction() //方向を決める
         {
             Random rnd = new Random();
             int direction = rnd.Next(0, 4);
             return direction;
         }
 
-        static void ShowMaze() //作成状況の表示
+        /// <summary>生成ロジック
+        /// 開始座標を乱数で得る
+        /// 開始座標が偶数でなければやり直す
+        /// 
+        /// 進む方向を乱数で得る
+        /// 乱数生成 0, 1, 2, 3 の順で上下左右とする
+        /// 
+        /// 1つ先と2つ先の座標が壁でないかを見る
+        /// 隣接したとその隣の座標が壁でないなら壁にする
+        /// 一度進んだら戻らないようにする
+        /// 壁に当たるまで伸ばし続ける
+        /// 作成してきた壁の座標履歴を格納
+        /// その履歴に重ならないようにする
+        /// </summary>
+        static void Generate()
         {
-            for(int i = 0; i < Maze.GetLength(0); i++)
+            int PositionX; //開始座標
+            int PositionY; //開始座標
+            int count = 0;
+            Random rnd = new Random();
+        ReGenerate:
+            while (true)
             {
-                for(int j = 0; j < Maze.GetLength(1); j++)
-                {
-                    if(Maze[i, j] == "■") { Console.ForegroundColor = ConsoleColor.White; }
-                    else { Console.ForegroundColor = ConsoleColor.White; }
-
-                    Console.Write(Maze[i, j]);
+                PositionX = rnd.Next(2, (Maze.GetLength(0) - 2));
+                PositionY = rnd.Next(2, (Maze.GetLength(1) - 2));
+                count++;
+                if (PositionX % 2 == 0 && PositionY % 2 == 0)
+                {//偶数になるまで再抽選
+                    if (Maze[PositionX, PositionY] != "■") //その座標に壁が存在しないか
+                        break;
                 }
-                Console.WriteLine();
+                else if (count > 1000)
+                {
+                    return;
+                }
+
             }
-            Console.ForegroundColor = ConsoleColor.White;
+            int direction = Direction();
+
+            while (PositionX != 0 || PositionY != 0 || PositionX != (Maze.GetLength(0) - 1) || PositionY != (Maze.GetLength(1)))
+            {
+                direction = Direction();
+                Maze[PositionX, PositionY] = "■";
+
+                switch (direction)
+                {
+                    case 0://上
+                        if ((Maze[PositionX - 1, PositionY] == "　") && (Maze[PositionX - 2, PositionY] == "　"))
+                        { //隣接が通路かつその隣も通路
+                            Maze[PositionX - 1, PositionY] = "■";
+                            Maze[PositionX - 2, PositionY] = "■";
+                            PositionX -= 2;
+                        }
+                        else if (PositionX - 2 == 0) //もし現在の座標の2マス上が壁だったら、1マス上を壁にする
+                        {//壁に隣接した部分を壁にしたので作り直し
+                            Maze[PositionX - 1, PositionY] = "■";
+                            break;
+                        }
+                        else if ((Maze[PositionX - 2, PositionY] == "■") && (Maze[PositionX + 2, PositionY] == "■") && (Maze[PositionX, PositionY - 2] == "■") && (Maze[PositionX, PositionY + 2] == "■"))
+                        { //うずまき対策
+                            goto ReGenerate;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                        break;
+
+                    case 1://下
+                        if ((Maze[PositionX + 1, PositionY] == "　") && (Maze[PositionX + 2, PositionY] == "　"))
+                        {
+                            Maze[PositionX + 1, PositionY] = "■";
+                            Maze[PositionX + 2, PositionY] = "■";
+                            PositionX += 2;
+                        }
+                        else if (PositionX + 2 == (Maze.GetLength(0) - 1)) //もし現在の座標の2マス下が壁だったら、1マス下を壁にする
+                        {//壁に隣接した部分を壁にしたので作り直し
+                            Maze[PositionX + 1, PositionY] = "■";
+                            break;
+                        }
+                        else if ((Maze[PositionX - 2, PositionY] == "■") && (Maze[PositionX + 2, PositionY] == "■") && (Maze[PositionX, PositionY - 2] == "■") && (Maze[PositionX, PositionY + 2] == "■"))
+                        {
+                            goto ReGenerate;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                        break;
+
+                    case 2://左
+                        if ((Maze[PositionX, PositionY - 1] == "　") && (Maze[PositionX, PositionY - 2] == "　"))
+                        {
+                            Maze[PositionX, PositionY - 1] = "■";
+                            Maze[PositionX, PositionY - 2] = "■";
+                            PositionY -= 2;
+                        }
+                        else if (PositionY - 2 == 0) //もし現在の座標の2マス左が壁だったら、1マス左を壁にする
+                        {//壁に隣接した部分を壁にしたので作り直し
+                            Maze[PositionX, PositionY - 1] = "■";
+                            break;
+                        }
+                        else if ((Maze[PositionX - 2, PositionY] == "■") && (Maze[PositionX + 2, PositionY] == "■") && (Maze[PositionX, PositionY - 2] == "■") && (Maze[PositionX, PositionY + 2] == "■"))
+                        {
+                            goto ReGenerate;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                        break;
+
+                    case 3://右
+                        if ((Maze[PositionX, PositionY + 1] == "　") && (Maze[PositionX, PositionY + 2] == "　"))
+                        {
+                            Maze[PositionX, PositionY + 1] = "■";
+                            Maze[PositionX, PositionY + 2] = "■";
+                            PositionY += 2;
+                        }
+                        else if (PositionY + 2 == (Maze.GetLength(1) - 1)) //もし現在の座標の2マス右が壁だったら、1マス右を壁にする
+                        {//壁に隣接した部分を壁にしたので作り直し
+                            Maze[PositionX, PositionY + 1] = "■";
+                            break;
+                        }
+                        else if ((Maze[PositionX - 2, PositionY] == "■") && (Maze[PositionX + 2, PositionY] == "■") && (Maze[PositionX, PositionY - 2] == "■") && (Maze[PositionX, PositionY + 2] == "■"))
+                        {
+                            goto ReGenerate;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                        break;
+                }
+                Console.Clear();
+                Console.WriteLine($"X:{PositionX} Y:{PositionY} 方向:{direction}");
+                ShowMaze();
+                //Thread.Sleep(5);
+                //Console.ReadKey();
+            }
         }
+
+        static void Check()
+        {
+            for (int i = 1; i < (Maze.GetLength(0) - 1); i += 2)
+            {
+                for (int j = 1; j < (Maze.GetLength(1) - 1); j += 2)
+                {
+                    if (Maze[i, j] == "　")
+                    {
+                        if ((Maze[i - 1, j] == "■") && (Maze[i + 1, j] == "■") && (Maze[i, j - 1] == "■") && (Maze[i, j + 1] == "■"))
+                        {
+                        redo:
+                            int direction = Direction();
+                            switch (direction)
+                            {
+                                case 0:
+                                    if ((i - 1) == 0) { goto redo; }
+                                    Maze[i - 1, j] = "　";
+                                    break;
+
+                                case 1:
+                                    if ((i + 1) == (Maze.GetLength(0) - 1)) { goto redo; }
+                                    Maze[i + 1, j] = "　";
+                                    break;
+
+                                case 2:
+                                    if ((j - 1) == 0) { goto redo; }
+                                    Maze[i, j - 1] = "　";
+                                    break;
+
+                                case 3:
+                                    if ((j + 1) == (Maze.GetLength(1) - 1)) { goto redo; }
+                                    Maze[i, j + 1] = "　";
+                                    break;
+                            }
+                        }
+                    }
+                    Console.WriteLine("修正中");
+                    Console.Clear();
+                    ShowMaze();
+                    //Thread.Sleep(5);
+                }
+            }
+        }
+
     }
 }
