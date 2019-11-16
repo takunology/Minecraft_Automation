@@ -43,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "CoreRCON": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "NPOI": {
               "target": "Package",
               "version": "[2.4.1, )"
