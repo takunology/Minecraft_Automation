@@ -7,14 +7,23 @@ namespace Builder
 {
     public class ReadExcelFile
     {
-        static int SHEET = 2; //高さ
+        static int SHEET = 6; //高さ
         static int ROW = 5; //幅
         static int COL = 5; //奥行
 
-        public static int[,,] Value = new int[SHEET, ROW, COL]; //エクセルデータの保持
+        public static string[,,] Value = new string[SHEET, ROW, COL]; //エクセルデータの保持
 
         public static void OpenExcelFile()
         {
+            Console.Write("シート数:");
+            SHEET = int.Parse(Console.ReadLine());
+            Console.Write("行数:");
+            ROW = int.Parse(Console.ReadLine());
+            Console.Write("列数:");
+            COL = int.Parse(Console.ReadLine());
+
+            Value = new string[SHEET, ROW, COL];
+
             try
             {
                 string Path = "../../../Excel/TestBook.xlsx";
@@ -36,13 +45,13 @@ namespace Builder
             catch(Exception e) { Console.WriteLine(e); }
         }
 
-        public static int GetValue(ISheet Sheet, int Row, int Column)
+        public static string GetValue(ISheet Sheet, int Row, int Column)
         {
             var row = Sheet.GetRow(Row) ?? Sheet.CreateRow(Row); //例外対策
             var cell = row.GetCell(Column) ?? row.CreateCell(Column);
-            int value;
+            string value;
 
-            value = int.Parse(cell.NumericCellValue.ToString());
+            value = cell.NumericCellValue.ToString();
             return value;
         }
     }

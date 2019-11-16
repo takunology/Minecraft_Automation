@@ -24,3 +24,4 @@ F:\GitHub\Minecraft_Automation\Builder\Builder\bin\Debug\netcoreapp3.0\runtimes\
 F:\GitHub\Minecraft_Automation\Builder\Builder\obj\Debug\netcoreapp3.0\Builder.csproj.CopyComplete
 F:\GitHub\Minecraft_Automation\Builder\Builder\obj\Debug\netcoreapp3.0\Builder.dll
 F:\GitHub\Minecraft_Automation\Builder\Builder\obj\Debug\netcoreapp3.0\Builder.pdb
+F:\GitHub\Minecraft_Automation\Builder\Builder\bin\Debug\netcoreapp3.0\CoreRCON.dll
