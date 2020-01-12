@@ -1,0 +1,17 @@
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\PictureConvert.exe
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\obj\Debug\netcoreapp3.0\PictureConvert.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\obj\Debug\netcoreapp3.0\PictureConvert.AssemblyInfoInputs.cache
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\obj\Debug\netcoreapp3.0\PictureConvert.AssemblyInfo.cs
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\PictureConvert.deps.json
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\PictureConvert.runtimeconfig.json
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\PictureConvert.runtimeconfig.dev.json
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\PictureConvert.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\PictureConvert.pdb
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\obj\Debug\netcoreapp3.0\PictureConvert.csproj.CopyComplete
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\obj\Debug\netcoreapp3.0\PictureConvert.dll
+F:\GitHub\Minecraft_Automation\PictureConvert\PictureConvert\obj\Debug\netcoreapp3.0\PictureConvert.pdb
