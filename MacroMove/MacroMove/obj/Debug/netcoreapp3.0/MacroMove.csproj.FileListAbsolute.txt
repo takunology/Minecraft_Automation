@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\MacroMove.exe
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\MacroMove.deps.json
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\MacroMove.runtimeconfig.json
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\MacroMove.runtimeconfig.dev.json
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\MacroMove.dll
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\MacroMove.pdb
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\MacroMove.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\MacroMove.AssemblyInfoInputs.cache
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\MacroMove.AssemblyInfo.cs
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\MacroMove.dll
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\MacroMove.pdb

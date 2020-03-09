@@ -1,0 +1,6 @@
+F:\GitHub\Minecraft_Automation\MacroMove\AutoMove\bin\Debug\AutoMove.exe.config
+F:\GitHub\Minecraft_Automation\MacroMove\AutoMove\bin\Debug\AutoMove.exe
+F:\GitHub\Minecraft_Automation\MacroMove\AutoMove\bin\Debug\AutoMove.pdb
+F:\GitHub\Minecraft_Automation\MacroMove\AutoMove\obj\Debug\AutoMove.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\MacroMove\AutoMove\obj\Debug\AutoMove.exe
+F:\GitHub\Minecraft_Automation\MacroMove\AutoMove\obj\Debug\AutoMove.pdb

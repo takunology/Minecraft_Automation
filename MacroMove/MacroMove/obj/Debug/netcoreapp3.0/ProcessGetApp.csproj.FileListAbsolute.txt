@@ -1,0 +1,11 @@
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\ProcessGetApp.exe
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\ProcessGetApp.deps.json
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\ProcessGetApp.runtimeconfig.json
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\ProcessGetApp.runtimeconfig.dev.json
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\ProcessGetApp.dll
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\bin\Debug\netcoreapp3.0\ProcessGetApp.pdb
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\ProcessGetApp.AssemblyInfoInputs.cache
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\ProcessGetApp.AssemblyInfo.cs
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\ProcessGetApp.dll
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\ProcessGetApp.pdb
+F:\GitHub\Minecraft_Automation\MacroMove\MacroMove\obj\Debug\netcoreapp3.0\ProcessGetApp.csprojAssemblyReference.cache
