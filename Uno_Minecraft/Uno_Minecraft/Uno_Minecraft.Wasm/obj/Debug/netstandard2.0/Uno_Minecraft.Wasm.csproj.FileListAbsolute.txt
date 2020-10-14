@@ -1,0 +1,4 @@
+F:\GitHub\Minecraft_Automation\Uno_Minecraft\Uno_Minecraft\Uno_Minecraft.Wasm\obj\Debug\netstandard2.0\Uno_Minecraft.Wasm.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\Uno_Minecraft\Uno_Minecraft\Uno_Minecraft.Wasm\obj\Debug\netstandard2.0\Uno_Minecraft.Wasm.AssemblyInfoInputs.cache
+F:\GitHub\Minecraft_Automation\Uno_Minecraft\Uno_Minecraft\Uno_Minecraft.Wasm\obj\Debug\netstandard2.0\Uno_Minecraft.Wasm.AssemblyInfo.cs
+F:\GitHub\Minecraft_Automation\Uno_Minecraft\Uno_Minecraft\Uno_Minecraft.Wasm\obj\Debug\netstandard2.0\Uno_Minecraft.Wasm.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\bin\Debug\netstandard2.0\XamarinMC.deps.json
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\bin\Debug\netstandard2.0\XamarinMC.dll
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\bin\Debug\netstandard2.0\ref\XamarinMC.dll
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\bin\Debug\netstandard2.0\XamarinMC.pdb
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamarinMC.csprojAssemblyReference.cache
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamarinMC.AssemblyInfoInputs.cache
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamarinMC.AssemblyInfo.cs
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamarinMC.dll
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\ref\XamarinMC.dll
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamarinMC.pdb
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamarinMC.csproj.CoreCompileInputs.cache
+F:\GitHub\Minecraft_Automation\XamarinMC\XamarinMC\XamarinMC\obj\Debug\netstandard2.0\XamlC.stamp

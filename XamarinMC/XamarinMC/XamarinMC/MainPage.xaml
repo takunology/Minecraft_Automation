@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinMC.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Minecraft with Xamarin" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        <Label Margin="20, 0" Text="Your IP address" FontSize="18"/>
+        <Entry Margin="20, 0" x:Name="your_ip" FontSize="16"/>
+        <Label Margin="20, 0" Text="Command here" FontSize="18"/>
+        <Entry Margin="20, 0" x:Name="command" FontSize="16"/>
+        <Button Margin="20, 0" Text="send" Clicked="Button_Clicked"/>
+        <Label Margin="20, 10" Text="Server log here." FontSize="12" x:Name="Loglabel"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,1 @@
+F:\GitHub\Minecraft_Automation\XamarinForMinecraft\XamarinForMinecraft\XamarinForMinecraft.UWP\XamarinForMinecraft.UWP.csproj;x86

@@ -1,0 +1,95 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\GitHub\\Minecraft_Automation\\Uno_Minecraft\\Uno_Minecraft\\Uno_Minecraft.UWP\\Uno_Minecraft.UWP.csproj": {}
+  },
+  "projects": {
+    "F:\\GitHub\\Minecraft_Automation\\Uno_Minecraft\\Uno_Minecraft\\Uno_Minecraft.UWP\\Uno_Minecraft.UWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\GitHub\\Minecraft_Automation\\Uno_Minecraft\\Uno_Minecraft\\Uno_Minecraft.UWP\\Uno_Minecraft.UWP.csproj",
+        "projectName": "Uno_Minecraft.UWP",
+        "projectPath": "F:\\GitHub\\Minecraft_Automation\\Uno_Minecraft\\Uno_Minecraft\\Uno_Minecraft.UWP\\Uno_Minecraft.UWP.csproj",
+        "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
+        "outputPath": "F:\\GitHub\\Minecraft_Automation\\Uno_Minecraft\\Uno_Minecraft\\Uno_Minecraft.UWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17763"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Filter": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.9, )"
+            },
+            "Uno.Core": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[3.0.12, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
